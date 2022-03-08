@@ -1,13 +1,44 @@
 # Coding Challenges
 
-## 1st Challenge
-Create a function that receives an integers array and returns the number that appeared only once.
+## 1//
+//
+//
+//
+//
+//
+//# Coding Challenges
+//
+//## 1st Challenge
+//
+//Create a function that receives an integers array and returns the number that appeared only once.
+//
+//| Input           | Output   |
+//| --------------- | -------- |
+//| (2,4,6,4,9,6,2) | 9        |
+//| (1,1,2)         | 2        |
+//| (2,2,1)         | 1        |
 
-| Input           | Output   |
-| --------------- | -------- |
-| (2,4,6,4,9,6,2) | 9        |
-| (1,1,2)         | 2        |
-| (2,2,1)         | 1        |
+
+
+var arr  = [ 1,1,2]
+var arr2 = [2,2,1]
+var arr3  = [2,4,6,4,9,6,2]
+var arr4 :[Int] = []
+
+
+
+
+  
+  for i in arr {
+    if i  >= 6 {
+      print (i)
+    }
+ 
+  }
+   
+arr4.append(arr)
+  
+
 
 
 ## 2nd Challenge
@@ -22,15 +53,38 @@ Create a function that receives a string then it converts uppercase letters into
 | sHroog         | ShROOG         |
 
 
-## 3rd Challenge
-Create a function that receives an array of items & arrays and returns one flattened array with all items exluding null values.
+////## 3rd Challenge
+//Create a function that receives an array of items & arrays and returns one flattened array with all items exluding null values.
+//
+//| N | Input                                 | Output                |
+//| - | ------------------------------------- | --------------------- |
+//| 1 | [1,[2,3,null,4],[null],5]             | [1,2,3,4,5]           |
+//| 2 | [7, 0,[null],[null, null, 9]]         | [7, 0, 9]             |
+//| 3 | [[null, 3], [2, 4, 5, null], 0, 8, 3] | [3, 2, 4, 5, 0, 8, 3] |
+//| 4 | [3, 5, [5, 9, 0]]                     | [3, 5, 5, 9, 0]       |
+//
+//
 
-| N | Input                                 | Output                |
-| - | ------------------------------------- | --------------------- |
-| 1 | [1,[2,3,null,4],[null],5]             | [1,2,3,4,5]           |
-| 2 | [7, 0,[null],[null, null, 9]]         | [7, 0, 9]             |
-| 3 | [[null, 3], [2, 4, 5, null], 0, 8, 3] | [3, 2, 4, 5, 0, 8, 3] |
-| 4 | [3, 5, [5, 9, 0]]                     | [3, 5, 5, 9, 0]       |
+
+
+var nab1  = [1,[2,3,nil,4],[nil],5] as [Any]
+var nab2  =  [7, 0,[nil],[nil, nil, 9]] as [Any]
+var nab3  = [[nil, 3], [2, 4, 5, nil], 0, 8, 3] as [Any]
+var nab4  = [3, 5, [5, 9, 0]] as [Any]
+
+var arr :[Int] =  []
+
+
+
+func felter () {
+  
+  for nb in nab1 {
+    if nb != nil {
+      print(nb )
+    } 
+  } 
+  
+}
 
 
 ## 4th Challenge
